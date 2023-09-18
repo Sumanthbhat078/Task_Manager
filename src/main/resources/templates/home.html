@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	crossorigin="anonymous">
+
+<!-- custom css -->
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+<title>Home</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+
+			<a class="navbar-brand" href="#">Task Manager</a>
+
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				
+
+			</div>
+		</div>
+	</nav>
+<section class="banner d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <h2 class="font-weight-bold">Task Manager</h2>
+        <p>
+            Welcome to Task Manager..! start managing your Tasks..!
+        </p>
+        <a th:href="@{/createTaskForm}" class="btn btn-primary mt-4 text-uppercase d-grid">Create Task</a>
+        <a th:href="@{/getAllTasks}" class="btn btn-primary mt-4 text-uppercase d-grid">Get All Tasks</a>
+        <a th:href="@{/getAllTasks}" class="btn btn-primary mt-4 text-uppercase d-grid">Update/Delete Tasks</a>
+    </div>
+
+</section>
+    <div class="container text-center mt-2">
+    <div th:if="${message}" class="alert alert-success" role="alert">
+        Task Deleted successfully
+    </div>
+    </div>
+<br><br>
+<div class="text-center">
+<h3>Search Task</h3>
+<form action="/getTask" method="POST" id="search-form">
+                <input type="number" id="id" name="id" placeholder="Enter Task id">
+                <button type="submit">Search</button>
+            </form>
+            </div>
+            <div class="container text-center mt-2">
+    <div th:if="${NotFound}" class="alert alert-danger" role="alert">
+        Task not found
+    </div>
+    </div>
+</body>
+</html>
