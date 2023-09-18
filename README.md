@@ -83,6 +83,9 @@ You can view the test cases and verify their results by running the `TaskManager
 
 ## Snap shots
 ![TaskManager-Home](https://github.com/Sumanthbhat078/Task_Manager/assets/143097716/a93742ef-9554-4497-8ead-a239481c4b59)
+![TaskManager-CreateTask](https://github.com/Sumanthbhat078/Task_Manager/assets/143097716/4f530a4b-92dc-44aa-b14e-25671542077f)
+![TaskManager-GetAllTasks](https://github.com/Sumanthbhat078/Task_Manager/assets/143097716/e01b3fc2-f3c7-441c-80c6-4f2891794c15)
+![TaskManager-updateTask](https://github.com/Sumanthbhat078/Task_Manager/assets/143097716/7f99a15c-9764-4311-91f1-6238558c151e)
 
 
 
